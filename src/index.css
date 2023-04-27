@@ -110,7 +110,7 @@ form{
 }
 
 .content {
-  max-width: 600px;
+  max-width: 60%;
   margin: 40px auto;
   padding: 20px;
 }
@@ -179,13 +179,11 @@ form{
 .weather-container div{
   width: 100%;
   margin: auto;
-  display: flex;
 }
 
 .weather-container img{
-  width: 70%;
   margin: auto;
-  display: flex;
+ 
 }
 
 .web-button {
@@ -194,7 +192,6 @@ form{
 
 .web-button button {
   width: 60%;
-  font-size: 1.5em;;
 }
 
 .logo img {
@@ -226,14 +223,17 @@ form{
   .weather-container div{
     width: 100%;
     margin: auto;
-    display: flex;
+    display: block;
   }
 
   .weather-container h3 {
-    width: auto;
+    display: block;
   }
 
   .submit {
+    width: 100%;
+  }
+  .web-button{
     width: 100%;
   }
 
@@ -245,10 +245,24 @@ form{
     text-align: center;
     width: 100%;
   }
-
-  img {
-    padding: 30%; 
-    text-align: center;
+  .logo img{
+    width: 100%;
+    padding: 0;
   }
+
+ 
   
+}
+
+@media screen and (min-width: 770px){
+  .weather-container div{
+    display: flex;
+    justify-content: left;
+  }
+  .weather-container h3{
+   width: 30%;
+  }
+  .weather-container img{
+    padding: 0;
+  }
 }
