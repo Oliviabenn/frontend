@@ -12,7 +12,7 @@ const Scores = () =>{
         const username= localStorage.getItem("USERNAME");
       
         if(username){
-        fetch(`/api/events/${username} `)
+        fetch(`https://glowlife-backend.vercel.app/api/events/${username}`)
         .then(res=> res.json())
         .then(response=> {
             setUser(response.user)
@@ -48,7 +48,7 @@ const Scores = () =>{
             score -= 1
         }
 
-        fetch("/api/score", {
+        fetch("https://glowlife-backend.vercel.app/api/score", {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

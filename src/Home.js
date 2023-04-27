@@ -15,7 +15,7 @@ const Home = () =>{
     const handleSubmit=(e)=> {
         e.preventDefault();
 
-        fetch("/api/add-event", {
+        fetch("https://glowlife-backend.vercel.app/api/add-event", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
